@@ -37,7 +37,7 @@ if st.button('Get Fare Prediction'):
         'passenger_count': passenger_count
     }
 
-    url = 'http://localhost:8000/predict'
+    url = 'https://taxifare.lewagon.ai/predict'
     response = requests.get(url, params=params)
 
     if response.status_code == 200:
